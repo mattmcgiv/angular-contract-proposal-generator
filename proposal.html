@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.1/angular.min.js"></script>
+    <script src="js/controllers.js"></script>
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-app="documentApp">
+<div ng-controller="documentController" >
+    <h1>Web Platform Proposal</h1>
+    <div>Prepared by: {{project.companyPOC}} ({{company.name}})</div>
+    <div>Prepared for: {{client.name}}</div>
+    <div>Date: {{project.proposalDate}}</div>
+
+    <h2>What I'll Do For You</h2>
+      <p>The following sections outline the scope of work for this project.</p>
+
+      <h3>Phase 1: Discovery and Wireframes</h3>
+      <p>I'll do a series of questionnaires and/or phone interviews to gather your requirements and goals for your web platform.  You'll provide your content (text, photographs, logos, etc.) to help me determine pages your site will include.  Once this is decided, I'll complete rough, black-and-white wireframes for each page to determine the overall layout of your site's content.  Once you approve the wireframes, we'll move on to Phase 2.</p>
+
+      <h3>Phase 2: Design</h3>
+      <p>First, we'll decide together on a color template for your site.  Once the color template is decided, I'll mock-up your site's homepage in a static design including content, colors, typography and layout based on the wireframes from Phase 1.  Once you approve of the final static design, we'll move on to Phase 3.</p>
+
+      <h3>Phase 3: Development</h3>
+      <p>In this phase, I'll implement the rest of the pages on the site by converting the static designs into a functional website.  Also, I'll set up your included e-commerce (http://www.woothemes.com/woocommerce/) and support chat (http://wp-livechat.com/) plugins.</p>
+
+      <h3>In Summary</h3>
+      <p>My primary goal is to help you have a high-quality, functional website that helps you make a good first impression on your visitors.  My secondary goal is to do this on-time and on-budget.  I understand how important it is for you to make a return on your investment.</p>
+
+      <p><strong>Based on the above features, the total estimate for this project is ${{project.estimate}}.</strong></p>
+
+    <h2>Moving Forward</h2>
+      <p>All we need to get started is for you to sign and return this document along with the signed Contract document (sent separately).</p>
+
+      <p>Once I receive these, I will invoice you for your Deposit of ${{project.estimate/2}}.</p>
+
+      <p>After you pay the deposit, I will schedule your project on my calendar. At the moment, I'm available to begin work on {{project.startDate}}.  I anticipate this project will take {{project.lengthDays}} business days to complete once I begin work.  Note: this completion time estimate does not include any time spent waiting for you to meet with me for discovery interviews, send me content, or approve my designs.</p>
+
+      <p>I am looking forward to helping your business grow!</p>
+
+      <p><strong>To move forward, please sign below and return:</strong></p>
+
+      <p><strong>Name:      _________________________</strong></p>
+      <p><strong>Date:      _________________________</strong></p>
+      <p><strong>Signature: _________________________</strong></p>
+</div> <!--documentController-->
+
+<script>
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+</script>
+</body>
+</html> 

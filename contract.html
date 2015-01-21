@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.1/angular.min.js"></script>
+    <script src="js/controllers.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-app="documentApp">
+<div ng-controller="documentController" >
+    <h1>Web Platform Contract</h1>
+    <p>Between me, {{company.name}}, and you, {{client.name}}.</p>
+
+    <h2>Summary</h2>
+      <p>I'll always do my best to fulfil your needs and meet your expectations, but it's important to have things written down so that we both know what's expected, who should do what and when, and what will happen if something goes wrong. In this contract you won't find any complicated legal terms or long passages of unreadable text. I have no desire to trick you into signing something that you might later regret. What I do want is what's best for both parties, now and in the future.</p>
+
+      <p>So in short;</p>
+
+      <p><strong>You, {{client.name}}, located at {{client.address}} are hiring {{company.name}} located at {{company.address}} to design and develop a custom website for the estimated total price of ${{project.estimate}} as outlined in my proposal dated {{project.proposalDate}}.</strong></p>
+
+    <h2>What do both parties agree to do?</h2>
+      <p>You: You have the authority to enter into this contract on behalf of yourself, your company or your organization. You agree to provide information that I require to complete the project, and that this information will be delivered according to my established timeline and in the format that I request.  You'll review my work, provide feedback and approval in a timely manner too. Deadlines work two ways, so you'll also be bound by dates we set together. You also agree to stick to the payment schedule set out at the end of this contract.</p>
+
+      <p>Me: I have the experience and ability to provide everything I've offered you and will deliver everything in a professional and timely manner. I'll strive to meet every deadline that's set, and I'll maintain the confidentiality of everything you give me.</p>
+      
+    <h2>Specifics</h2>
+      <h3>Design</h3>
+      <p>I create look-and-feel designs, and flexible layouts that adapt to the capabilities of many devices and screen sizes. I create designs iteratively and use predominantly HyperText Markup Language ("HTML"), Cascading StyleSheets ("CSS"), PHP Hypertext Processor (“PHP”) and JavaScript ("JS"), so I won't waste time mocking up every element as a static visual. I may use static visuals to indicate a look-and-feel direction (e.g. color, texture, and typography).</p>
+
+      <p>You'll have plenty of opportunities to review my work and provide feedback. I will maintain regular, possibly daily contact with you. If, at any stage, you're not happy with the direction the work is taking, you'll forfeit your Deposit and may cancel this contract.</p>
+
+      <h3>Text Content</h3>
+      <p>I'm not responsible for writing any text copy. If you'd like new content or text, I can provide a separate estimate for that.</p>
+
+      <h3>Photographs</h3>
+      <p>You should supply graphic files in an editable, digital format. You should supply photographs in a high resolution digital format. If you choose to buy stock photographs, I can suggest stock libraries. If you'd like me to search for and/or provide photographs for you, I can provide a separate estimate for that.</p>
+
+      <h3>HTML, CSS, JS, and PHP</h3>
+      <p>I deliver web page files developed from HTML for markup, CSS for styling, and JS or PHP for advanced functionality.</p>
+
+      <h3>Browser Testing</h3>
+      <p>For the purposes of this contract, browser testing does not guarantee that a website will look the same in browsers of different capabilities or on devices with different screen sizes. I'll conduct browser testing to ensure that a user's experience on your site should be appropriate to the capabilities of that user's browser or device.</p>
+
+      <h3>Desktop Browser Testing</h3>
+      <p>I test my work in the latest versions of major desktop browsers including Apple Safari, Google Chrome, Microsoft Internet Explorer, and Mozilla Firefox. I won't test in other browsers or older browsers unless we amend this contract to say otherwise. If you need an enhanced design for an older browser, I can provide a separate estimate for that.</p>
+
+      <h3>Mobile Browser Testing</h3>
+      <p>Testing popular small-screen devices is essential in ensuring that a person's experience of a design is appropriate to the capabilities of the device they're using. I test my work in:</p>
+
+      <ul>
+        <li>iOS 8: Safari, Google Chrome</li>
+        <li>Android 4.4: Google Chrome, Firefox</li>
+      </ul>
+
+      <p>For the purposes of this contract, I will not test Blackberry, Opera Mini/Mobile, Windows Phone or other mobile browsers. If you need me to test using these, I can provide separate estimates for those.</p>
+
+      <h3>Technical Support</h3>
+      <p>I am not a website hosting company, so I don't offer support for website hosting, email, or other services relating to hosting. You may already have professional hosting and you might even manage that hosting in-house. If you don't, I can set up an account for you at one of my preferred hosting providers. If you'd like for me to set up your site on a server, or add additional features (including but not limited to services like Google Analytics), I can provide a separate estimate for that. The updates to, backup, and management of your server will be up to you.</p>
+
+      <h3>Changes and Revisions</h3>
+      <p>I know from experience that fixed-price contracts are rarely beneficial to you, as they often limit you to your earliest ideas. I don't want to limit your ability to change your mind. The price at the beginning of this contract is based on the length of time I estimate I'll need to accomplish everything you've told me you'd like to achieve, but I'm happy to be flexible. If you want to change your mind or add anything new, that won't be a problem as I'll provide a separate estimate for that.  The following paragraph describes how this will work:</p>
+
+      <p><strong>This project will be divided into Phases as outlined in the Proposal dated {{project.proposalDate}}.  There are two rounds of revisions given at each phase for that phase only. Once you give approval to close a Phase and move on to the next Phase, we will bill you hourly for any subsequent changes to the closed Phase.  This restriction applies across all Phases…once a Phase has been approved, subsequent revisions to that phase will be charged at a rate of ${{company.hourlyRateDollars}} per hour.</strong></p>
+
+      <p><strong>Termination fee:  If for any reason, you cancel this project after you have made your Deposit, you will forfeit your entire Deposit of ${{project.estimate/2}} as a termination or “kill” fee.</strong></p>
+
+      <h3>Legal</h3>
+      <p>I can't guarantee that my work will be error-free, so I won't be liable to you or any third-party for damages, including lost profits, lost savings or other incidental, consequential or special damages, even if you've advised me of them. Finally, if any provision of this contract shall be deemed unlawful, void, or for any reason unenforceable, then that provision shall be severable from this contract and shall not affect the validity and enforceability of any remaining provisions.</p>
+
+      <h3>Copyrights</h3>
+      <p>First, you guarantee that all elements of text, images or other artwork you provide are either owned by you, or that you have permission to use them.</p>
+
+      <p>Then, when your final payment has cleared, copyright will be automatically assigned as follows:</p>
+
+      <p>You'll own the visual elements that I create for this project. I'll give you source files, and you should keep them somewhere safe as I am not required to (nor will I) keep a copy. You own all elements of text, images and data you provided, unless someone else owns them.</p>
+
+      <p>I'll own the unique combination of these elements that constitutes a complete design and I'll license its use to you, exclusively and in perpetuity for this project only.</p>
+
+      <p>I love to show off my work and share what I've learned with other people and potential clients, so I reserve the right to display and link to your project as part of my portfolio and to write about it on websites, in magazine articles, and in books.</p>
+
+      <h3>Payments</h3>
+      <p>I'm sure you understand how important it is to my business that you promptly pay the invoices I send. Thus, you agree to the following payment schedule:</p>
+
+      <ol>
+        <li>50% Deposit due upon scheduling the start of the work</li>
+        <li>50% payment due on final upload of the new design to your web host.</li>
+      </ol>
+
+
+      <h3>Other Details</h3>
+      <p>You can't transfer this contract to anyone else without my permission. This contract stays in place and need not be renewed. If for some reason one part of this contract becomes invalid or unenforceable, the rest of the contract will still remain in place.</p>
+
+      <p><strong>Although the language is simple, the intentions are serious and this contract is a legal document under exclusive jurisdiction of courts in the United States of America.</strong></p>
+
+    <h2>Signatures</h2>
+      <p>Signed by and on behalf of {{company.name}} </p>
+      <p>Signed by and on behalf of {{project.companyPOC}} </p>
+      <p>Signature:  _______________________</p>
+      <p>Date: {{project.proposalDate}}</p>
+
+      <p>Signed by and on behalf of {{client.name}} </p>
+      <p>Signature:  _______________________</p>
+      <p>Date: _______________________</p>
+
+</div> <!--documentController-->
+
+<script>
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+</script>
+</body>
+</html> 

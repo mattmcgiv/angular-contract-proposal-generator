@@ -1,0 +1,33 @@
+html { font-size: 62.5%;
+
+} 
+
+body { font-size: 1.8rem; /* =16px */
+	font-family: Georgia, serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+h1   { 
+	font-size: 3.6rem; /* =28px */
+
+}
+
+h2 {
+	margin-left: 20px;
+	margin-top: 30px;
+}
+
+h3 {
+	margin-left: 40px;
+}
+
+p {
+	margin-left: 60px;
+}
+
+ol, ul {
+	margin-left: 80px;
+}
